@@ -290,6 +290,11 @@ button:hover {
     transform: rotate(-45deg) translate(0,-11px);
 }
 
+.smaller-text {
+    font-size: .6em;
+    margin-left: 4px;
+}
+
 .side-menu {
     width: 300px;
     display: flex;
