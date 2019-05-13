@@ -15,12 +15,16 @@ module.exports = {
 
         fetchJson.get(spot_url).then(function(data) {
 
-            let messages = data.response.feedMessageResponse.messages.message;
+
+    //SPOT is truely shit, if only one message sent as object not array
+            let messages = data.response.feedMessageResponse.messages.message.id === undefined  ? data.response.feedMessageResponse.messages.message : [data.response.feedMessageResponse.messages.message];
+
+
+
             for(var i in messages) {
 
 
                 //add features via api
-
                const payload = {
                    _token: global_config.ng_token,
                    schema: global_config.schema,

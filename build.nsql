@@ -1,8 +1,9 @@
---FILE/SQL: configuration/create-company.sql
---FILE/SQL: server_config/application_parameter.sql
---FILE/SQL: server_config/create_views.sql
---FILE/SQL: functions/point_along_route.sql
---FILE/SQL: workflow/feature_workflow_script.js
---FILE/SQL: functions/distance_along_route.sql
---FILE/SQL: server_config/json_store.sql
+FILE/SQL: server_config/create_company.sql
+FILE/SQL: server_config/create_users.sql
+FILE/SQL: server_config/application_parameter.sql
+FILE/SQL: server_config/create_views.sql
+FILE/SQL: functions/point_along_route.sql
+FILE/SQL: workflow/feature_workflow_script.js
+FILE/SQL: functions/distance_along_route.sql
+FILE/SQL: server_config/json_store.sql
 FILE/SQL: server_config/reports/leaderboard.sql
