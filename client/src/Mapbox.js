@@ -196,9 +196,7 @@ export default class Mapbox extends Queueable {
             },
         }, json);
 
-        this.maps[options.map].map.getSource(options.name).setData({
-            ...options.data,
-        });
+        this.maps[options.map].map.getSource(options.name).setData(options.data);
         this.finished(pid,self.queue.DEFINE.FIN_OK);
     }
 
